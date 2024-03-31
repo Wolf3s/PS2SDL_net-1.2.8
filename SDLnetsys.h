@@ -60,7 +60,9 @@ typedef int socklen_t;
 #include <netinet/tcp.h>
 #endif
 #include <sys/socket.h>
+#ifndef _EE
 #include <net/if.h>
+#endif
 #include <netdb.h>
 #endif /* WIN32 */
 
