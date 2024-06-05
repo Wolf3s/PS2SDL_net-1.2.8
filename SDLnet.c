@@ -59,15 +59,6 @@ void SDLNet_SetLastError(int err)
 
 #endif
 
-#ifdef _EE
-/* Blank function */
-struct hostent *gethostbyaddr(const void *addr, socklen_t len, int type)
-{
-
-	return NULL;
-}
-#endif
-
 /* Initialize/Cleanup the network API */
 int  SDLNet_Init(void)
 {
